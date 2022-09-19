@@ -308,3 +308,9 @@ backupRetention:
   #   bucketName: bucket
   #   ## Optional. Specify if you're using an alternate S3 endpoint.
   #   # endpointUrl: ""
+
+## Configure Vertical Pod Autoscaler
+## ref: https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler
+vpa:
+  enabled: false
+  updateMode: "Off"  # Off, Initial, Auto

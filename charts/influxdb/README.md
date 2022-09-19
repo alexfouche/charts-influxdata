@@ -118,6 +118,8 @@ The following table lists configurable parameters, their descriptions, and their
 | backup.persistence.accessMode | Access mode for the volume | ReadWriteOnce |
 | backup.persistence.size | Storage size | 8Gi |
 | backup.resources | Resources requests and limits for `backup` pods | `ephemeral-storage: 8Gi` |
+| vpa.enabled | Boolean to enable and disable Vertical Pod Autoscaler | false |
+| vpa.updateMode | Update mode for Vertical Pod Autoscaler | Off |
 
 To configure the chart, do either of the following:
 
