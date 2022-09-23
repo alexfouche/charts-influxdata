@@ -8,11 +8,7 @@ metadata:
     {{- include "influxdb.labels" . | nindent 4 }}
 spec:
   targetRef:
-    {{- if .Capabilities.APIVersions.Has "batch/v1" }}
-    apiVersion: batch/v1
-    {{- else }}
-    apiVersion: batch/v1beta1
-    {{- end }}
+    apiVersion: apps/v1
     kind: StatefulSet
     name: {{ include "influxdb.fullname" . }}
   updatePolicy:
