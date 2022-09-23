@@ -189,3 +189,9 @@ pdb:
   create: true
   minAvailable: 1
   # maxUnavailable: 1
+
+## Configure Vertical Pod Autoscaler
+## ref: https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler
+vpa:
+  enabled: false
+  updateMode: "Off"  # Off, Initial, Auto
