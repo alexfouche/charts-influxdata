@@ -117,3 +117,9 @@ sidecar:
 
 ## Override the deployment namespace
 namespaceOverride: ""
+
+## Configure Vertical Pod Autoscaler
+## ref: https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler
+vpa:
+  enabled: false
+  updateMode: "Off"  # Off, Initial, Auto

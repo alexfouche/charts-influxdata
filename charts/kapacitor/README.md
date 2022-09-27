@@ -77,6 +77,8 @@ The following table lists configurable parameters, their descriptions, and their
 | `sidecar.sideload.searchNamespace` | If specified, the sidecar will search for sideload configmaps inside this namespace. Otherwise the namespace in which the sidecar is running will be used. It's also possible to specify ALL to search in all namespaces | `nil` |
 | `sidecar.sideload.folder` | Folder in the pod that should hold the collected sideloads. This path will be mounted. | `/var/lib/kapacitor/sideload` |
 | `namespaceOverride` | Override the deployment namespace | `""` (`Release.Namespace`) |
+| `vpa.enabled` | Boolean to enable and disable Vertical Pod Autoscaler | `false` |
+| `vpa.updateMode` | Update mode for Vertical Pod Autoscaler | `"Off"` |
 
 To configure the chart, do either of the following:
 
