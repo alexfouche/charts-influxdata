@@ -50,6 +50,11 @@ spec:
               key: influxdb-password
               name: {{ .Values.existingSecret }}
         {{- end }}
+        {{- if .Values.envFromSecret }}
+        envFrom:
+        - secretRef:
+            name: {{ .Values.envFromSecret }}
+        {{- end }}
         ports:
         - containerPort: 9092
         volumeMounts:

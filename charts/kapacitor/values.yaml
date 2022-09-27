@@ -60,6 +60,12 @@ resources:
 #
 # helm install --name kapacitor-rls --set influxURL=http://influxurl.com,envVars.KAPACITOR_SLACK_ENABLED=true,envVars.KAPACITOR_SLACK_URL="http://slack.com/xxxxx/xxxxx/xxxx/xxxxxxx" influxdata/kapacitor
 
+## The name of a secret in the same kubernetes namespace which contains values to
+## be added to the environment (must be manually created)
+## This can be useful for auth tokens, etc.
+#
+# envFromSecret: kapacitor-env
+
 ## Set the URL of InfluxDB instance to create subscription on
 ## ref: https://docs.influxdata.com/kapacitor/v1.1/introduction/getting_started/
 ##
