@@ -2,13 +2,13 @@
 ## ref: https://hub.docker.com/r/library/kapacitor/tags/
 ##
 image:
-  repository: "kapacitor"
-  tag: "1.6.4-alpine"
-  pullPolicy: "IfNotPresent"
+  repository: kapacitor
+  tag: 1.6.4-alpine
+  pullPolicy: IfNotPresent
 
 ## Deployment Strategy type
-# strategy:
-#   type: Recreate
+strategy:
+  type: Recreate
 
 ## Specify a service type, defaults to NodePort
 ## ref: http://kubernetes.io/docs/user-guide/services/
